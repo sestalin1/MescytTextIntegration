@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+	'csvintegration.apps.CsvintegrationConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
 		'HOST': 'localhost',
-        'NAME': 'postgres',
+        'NAME': 'MescytDB',
 		'USER': 'postgres',
 		'PASSWORD': 'prueba',
 		'PORT': '5433',
