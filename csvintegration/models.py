@@ -2,7 +2,7 @@ from django.db import models
 
 
 class University(models.Model):
-	rnc = models.IntegerField('RNC')
+	rnc = models.IntegerField('RNC',primary_key=True)
 	name = models.CharField('Nombre',max_length = 50)
 
 
