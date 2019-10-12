@@ -8,11 +8,11 @@ class University(models.Model):
 
 class Carreer(models.Model):
 	name = models.CharField('Nombre',max_length = 50)
-	univesity = models.ForeignKey(University, related_name = 'UniversityCarrersFK',on_delete = models.CASCADE, default = '')
+	university = models.ForeignKey(University, related_name = 'UniversityCarrersFK',on_delete = models.CASCADE, default = '')
 	enrollment = models.IntegerField('Inscritos', default = 0)
 	graduates = models.IntegerField('Graduados', default = 0)
-	openingDate = models.DateField('Fecha de Apertura', blank=True, null=True)
-	closingDate = models.DateField('Fecha de Cierre',blank=True,null=True)
+	opening_date = models.DateField('Fecha de Apertura', blank=True, null=True)
+	closing_date = models.DateField('Fecha de Cierre',blank=True,null=True)
 	credits = models.IntegerField('Creditos',default = 0)
 	
 	degrees = (
